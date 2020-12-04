@@ -28,22 +28,22 @@ const Pregunta = ({
 
   return (
     <Fragment>
-      <h2>Coloca tu presupuesto</h2>
+      <h2>Introduce your Budget</h2>
 
-      {error ? <Error mensaje="Presupuesto incorrecto" /> : null}
+      {error ? <Error mensaje="Wrong Budget" /> : null}
 
       <form onSubmit={agregarPresupuesto}>
         <input
           type="number"
           className="u-full-width"
-          placeholder="coloca tu presupuesto"
+          placeholder="Introduce your Budget"
           onChange={definirPresupuesto}
         />
 
         <input
           type="submit"
           className=" button-primary u-full-width"
-          value="Definir presupuesto"
+          value="Define Budget"
         />
       </form>
     </Fragment>

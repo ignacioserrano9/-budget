@@ -5,9 +5,9 @@ import PropTypes from "prop-types";
 const ControlPresupuesto = ({ presupuesto, restante }) => {
   return (
     <Fragment>
-      <div className="alert alert-primary">Presupuesto:{presupuesto}</div>
+      <div className="alert alert-primary">Budget:{presupuesto}</div>
       <div className={revisarPresupuesto(presupuesto, restante)}>
-        Restante{restante}
+        Rest:{restante}
       </div>
     </Fragment>
   );

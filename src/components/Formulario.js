@@ -29,18 +29,18 @@ const Formulario = ({ guardarGasto, guardarCrearGasto }) => {
 
   return (
     <form onSubmit={agregarGasto}>
-      <h2>Agregar tus gastos aqui</h2>
+      <h2>Add your spending here</h2>
 
       {error ? (
         <Error mensaje="Ambos campos son obligatorios | Presupuesto incorrecto" />
       ) : null}
 
       <div className="campo">
-        <label>nombre Gasto</label>
+        <label>Name</label>
         <input
           type="text"
           className="u-full-width"
-          placeholder="Ej. Transporte"
+          placeholder="Ex. Transport"
           value={nombre}
           onChange={(e) => guardarNombre(e.target.value)}
         />
